@@ -15,14 +15,16 @@
     </head>
   <body>
     <div class="container"> 
-      <h1 class='text-center mt-2 mb-4'> Web Development with Python</h1>
+      <h1 class='text-center mt-2 mb-4'> {{Compnay}} Web Development with Python</h1>
       <img class='img-fluid' id='banner' src="https://images.unsplash.com/photo-1543616991-75a2c125ff5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" height="320" alt="HTML Dog">
       <h2 class='text-center mt-2 mb-4'>About Learning</h2>
       <p class='lead'>Woody equal ask saw sir weeks aware decay. Entrance prospect removing we packages strictly is no smallest he. For hopes may chief get hours day rooms. Oh no turned behind polite piqued enough at. Forbade few through inquiry blushes you. Cousin no itself eldest it in dinner latter missed no. Boisterous estimating interested collecting get conviction friendship say boy. Him mrs shy article smiling respect opinion excited. Welcomed humoured rejoiced peculiar to in an.
   Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration remarkably. Matter future lovers desire marked boy use. Chamber reached do he nothing be.</p>
       <h2 class='text-center mt-2 mb-4'>Topics to Cover</h2>
       <p>
-        TODO- Show Topics Here. 
+        {%for job in jobs %}
+         {% include 'jobs.html' %}
+        {% endfor%}
       </p>
       <div class='text-center'>
       <Button class="btn btn-secondary btn-lg">Contact Us.</Button>
